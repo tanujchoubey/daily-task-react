@@ -65,9 +65,9 @@ button{
 }
 .task button{
   background-color: rgb(148, 21, 47);
-  border-radius: 100%;
+  border-radius: 10px;
   width: 100px;
-  height: 30px;
+  height: 40px;
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -80,3 +80,35 @@ button{
 /* *{
   border: 1px solid red;
 } */
+
+@media screen and (max-width: 450px){
+  input{
+    font-size: 1.2rem;
+    width: 150px;
+  }
+  textarea{
+    font-size: 1.2rem;
+    width: 150px;
+  }
+  button{
+    width: 180px;
+  }
+  .task{
+    width: 160px;
+    margin: 20px 0px;
+    padding: 15px 10px;
+  }
+  .task button{
+    border-radius: 10px;
+    width: 70px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+  .task > div{
+    width: 80%;
+  }
+  .task span{
+    font-size: 0.8rem;
+    width: 80%;
+  }
+}
